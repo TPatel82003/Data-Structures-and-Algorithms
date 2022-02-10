@@ -6,7 +6,7 @@ void INSERTION_SORT(int *ARR, int LEN)
     {
         int CURRENT_ELEM_ = ARR[i];
         int ITER_ = i - 1;
-        while (CURRENT_ELEM_ < ARR[i] && ITER_ >= 0)
+        while (CURRENT_ELEM_ < ARR[ITER_] && ITER_ >= 0)
         {
             ARR[ITER_ + 1] = ARR[ITER_];
             ITER_--;
